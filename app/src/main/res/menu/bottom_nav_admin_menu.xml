@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/createChurch"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Church" />
+
+    <item
+        android:id="@+id/adminNotes"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="Notes" />
+
+    <item
+        android:id="@+id/financials"
+        android:icon="@drawable/ic_monetization_on_black_24dp"
+        android:title="Finance" />
+
+</menu>

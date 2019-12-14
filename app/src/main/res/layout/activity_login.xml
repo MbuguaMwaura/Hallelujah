@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login">
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/signUpCard"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        card_view:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/transparent"
+
+            android:padding="30sp"
+            >
+
+            <EditText
+                android:id="@+id/loginuserEmail"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorDivider"
+                android:hint="Email"
+                android:padding="20dp"
+                android:background="@color/transparent"
+
+                />
+
+            <EditText
+                android:id="@+id/loginuserPassWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:background="@color/transparent"
+
+                android:padding="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorDivider" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient"
+                android:textColor="@color/white"
+                android:text="Login"/>
+
+            <TextView
+                android:id="@+id/signUpTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#63B1E0"
+                android:textSize="15sp"
+                android:padding="15dp"
+                android:layout_marginTop="10sp"
+                android:text="Don't have an account? Sign-up here..."
+                />
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpCard"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

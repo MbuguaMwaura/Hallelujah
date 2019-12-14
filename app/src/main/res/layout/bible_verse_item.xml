@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:layout_below="@+id/linear1"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/bibleBookItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="Book"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/bibleChapterItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="Chapter 7:"
+                />
+
+            <TextView
+                android:id="@+id/bibleVerseFromItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text=" Verse 7 - "
+                />
+            <TextView
+                android:id="@+id/bibleVerseToItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="10"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/verseItem"
+        android:padding="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lthis i stjf;jv;ajdf;badnvbadnfobna'ofdnvslnbadkfladskhds.kjc ;akjd ;sjdf;jbn"
+        android:textColor="@color/black"
+        android:layout_below="@+id/linear1"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+

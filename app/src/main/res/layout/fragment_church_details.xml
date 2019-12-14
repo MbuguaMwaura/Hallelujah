@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ChurchDetails.ChurchDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <ImageView
+        android:id="@+id/churchDetailsImage"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:src="@drawable/church" />
+
+    <TextView
+        android:id="@+id/churchDetailsName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Church Name"
+        />
+
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/churchDetailsActivitiesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Activities"
+            android:textSize="20sp"
+            />
+
+
+
+        <TextView
+            android:padding="16dp"
+            android:id="@+id/churchDetailsActivities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Scripture API is continuously being worked on and used by people and organizations all around the world. We read our forums daily and respond to questions and troubleshooting issues with you. If you want immediate help, you can also submit a ticket request for quicker responses."
+            android:textSize="20sp"
+            />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/titheBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/blue"
+            android:text="Tithe"
+            android:textColor="@color/white"
+            />
+    <Button
+        android:id="@+id/activityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        android:background="@color/blue"
+        android:text="Edit Activities"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        />
+    </RelativeLayout>
+</LinearLayout>
+        <Button
+            android:id="@+id/saveChurchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:background="@color/blue"
+            android:text="Add"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+
+   </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

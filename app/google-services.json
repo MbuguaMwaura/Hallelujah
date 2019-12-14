@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "526995311617",
+    "firebase_url": "https://hallelujah-6595c.firebaseio.com",
+    "project_id": "hallelujah-6595c",
+    "storage_bucket": "hallelujah-6595c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526995311617:android:1c192e7844baf89e",
+        "android_client_info": {
+          "package_name": "com.example.hallelujah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526995311617-4g6dkaltbhvthd5vajumk0vej0ljpl71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hallelujah",
+            "certificate_hash": "ca82ebe935944192b40c641a9c6f3f3c17479c95"
+          }
+        },
+        {
+          "client_id": "526995311617-ujo5qdnd0ul52ms3u5fqll4lkc56ekuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAinRQlsOivj6DMb9xEhhDM9mKUeG7pXLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526995311617-ujo5qdnd0ul52ms3u5fqll4lkc56ekuc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

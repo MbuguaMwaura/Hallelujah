@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AdminPackage.ChurchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="350sp"
+        android:id="@+id/cardChurch"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="20sp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/savedItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="CREATE A CHURCH"
+                android:textSize="20dp"
+
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/line4"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@+id/humidity"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDivider"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dip" />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewChurches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/savedChurchesCard"-->
+                <!--android:layout_width="350sp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="150dp"-->
+                    <!--android:layout_margin="20sp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/savedChurches"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:text="CHURCHES"-->
+                        <!--android:textSize="20dp"-->
+
+                        <!--/>-->
+
+
+                <!--</RelativeLayout>-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

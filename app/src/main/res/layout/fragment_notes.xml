@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edffff"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.NotesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/line1"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_below="@+id/humidity"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorDivider"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip" />
+
+                <TextView
+                    android:id="@+id/line2"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_below="@+id/humidity"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorDivider"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip" />
+
+                <EditText
+                    android:id="@+id/notetitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_create_black_24dp"
+                    android:hint="NOTE TITLE" />
+
+                <EditText
+                    android:id="@+id/noteBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Write your note here..." />
+
+                <TextView
+                    android:id="@+id/line3"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_below="@+id/humidity"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorDivider"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip" />
+
+                <TextView
+                    android:id="@+id/line4"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_below="@+id/humidity"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorDivider"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <ImageView
+            android:id="@+id/saveNoteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card1"
+            android:layout_alignRight="@id/card1"
+            android:tooltipText=""
+            card_view:srcCompat="@drawable/ic_archive_black_24dp" />
+
+        <ImageView
+            android:id="@+id/saveNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveNoteBtn"
+            android:layout_alignRight="@id/saveNoteBtn"
+            card_view:srcCompat="@drawable/ic_inbox_black_24dp" />
+
+    </RelativeLayout>
+</FrameLayout>
